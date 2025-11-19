@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="docs/images/banner.png" width="100%" />
+<img src="docs/images/icon.png" width="30%" />
 
 **Database-aware semantic highlighting for SQL in VS Code.**  
 Deep, accurate table & column coloring powered by your live PostgreSQL schema.
