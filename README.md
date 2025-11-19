@@ -8,7 +8,7 @@
 Deep, accurate table & column coloring powered by your live PostgreSQL schema.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Shayman-M-86/sql-semantic-tokens)
-![VSIX size](https://img.shields.io/badge/VSIX-~30KB-brightgreen)
+![VSIX size](https://img.shields.io/badge/VSIX-~1KB-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 </div>
