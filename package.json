@@ -77,7 +77,7 @@
     ]
   },
   "scripts": {
-    "bundle": "node esbuild.config.js",
+    "bundle": "node scripts/esbuild.config.js",
     "watch": "esbuild src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=out/extension.js --watch"
   },
   "devDependencies": {
