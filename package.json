@@ -3,7 +3,12 @@
   "displayName": "SQL Semantic Tokens",
   "description": "Semantic highlighting for SQL tables and columns using a PostgreSQL schema.",
   "version": "0.0.1",
+  "icon": "docs/images/icon.png",
   "publisher": "Shayman-M-86",
+  "galleryBanner": {
+    "color": "#21214c",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
