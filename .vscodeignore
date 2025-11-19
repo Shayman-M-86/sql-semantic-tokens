@@ -1,0 +1,18 @@
+# Git & editor
+.git/
+.github/
+.vscode/
+
+# Source & config
+src/
+tsconfig.json
+esbuild.config.js
+
+# Node modules (not needed in VSIX because we bundle)
+node_modules/
+
+# Maps
+**/*.map
+
+# VSCE artifacts
+sql-semantic-tokens-*.vsix
