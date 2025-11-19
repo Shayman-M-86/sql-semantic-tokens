@@ -1,0 +1,88 @@
+{
+  "name": "sql-semantic-tokens",
+  "displayName": "SQL Semantic Tokens",
+  "description": "Semantic highlighting for SQL tables and columns using a PostgreSQL schema.",
+  "version": "0.0.1",
+  "publisher": "Shayman-M-86",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:sql",
+    "onLanguage:pgsql",
+    "onLanguage:postgres",
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "semanticTokenTypes": [
+      {
+        "id": "table",
+        "superType": "type",
+        "description": "SQL table name or table alias"
+      },
+      {
+        "id": "column",
+        "superType": "property",
+        "description": "SQL column name or column alias"
+      }
+    ],
+    "configuration": {
+      "title": "SQL Semantic Tokens",
+      "properties": {
+        "sqlSemanticTokens.dbHost": {
+          "type": "string",
+          "default": "localhost",
+          "description": "PostgreSQL host"
+        },
+        "sqlSemanticTokens.dbPort": {
+          "type": "number",
+          "default": 5432,
+          "description": "PostgreSQL port"
+        },
+        "sqlSemanticTokens.dbUser": {
+          "type": "string",
+          "default": "postgres",
+          "description": "PostgreSQL user name"
+        },
+        "sqlSemanticTokens.dbPassword": {
+          "type": "string",
+          "default": "",
+          "description": "PostgreSQL password"
+        },
+        "sqlSemanticTokens.dbName": {
+          "type": "string",
+          "default": "postgres",
+          "description": "Database name"
+        },
+        "sqlSemanticTokens.dbSchema": {
+          "type": "string",
+          "default": "public",
+          "description": "Schema to introspect"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "sqlSemanticTokens.insertSchemaHint",
+        "title": "SQL Semantic Tokens: Insert Schema Hint Comment"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "pg": "^8.12.0"
+  }
+}
+  
